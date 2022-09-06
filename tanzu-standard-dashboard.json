@@ -1,0 +1,2067 @@
+{
+  "name": "Tanzu Standard Enterprise Services",
+  "url": "Tanzu-Standard-Enterprise-Services",
+  "eventFilterType": "BYCHART",
+  "displayDescription": false,
+  "displaySectionTableOfContents": true,
+  "displayQueryParameters": true,
+  "sections": [
+    {
+      "rows": [
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Core Up"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"core\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Database Up"
+                },
+                "dashboardLayout": {
+                  "x": 3,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"database\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Portal Up"
+                },
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"portal\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Job Service Up"
+                },
+                "dashboardLayout": {
+                  "x": 9,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"jobservice\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        },
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Redis Up"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"redis\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Trivy Up"
+                },
+                "dashboardLayout": {
+                  "x": 3,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"trivy\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Up"
+                },
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"registry\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Notary Up"
+                },
+                "dashboardLayout": {
+                  "x": 9,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "sum(ts(harbor.up.gauge, component=\"notary\" and cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        },
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "showValueColumn": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "showRawValues": false,
+                "lineType": "linear",
+                "showHosts": true,
+                "groupBySource": false,
+                "windowing": "full",
+                "fixedLegendFilterSort": "TOP",
+                "y1Units": "",
+                "sortValuesDescending": true,
+                "fixedLegendShowMetricName": false,
+                "type": "gauge",
+                "y1UnitAutoscaling": false,
+                "showLabels": true,
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": true,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "defaultSortColumn": null,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Usage vs Quota",
+              "anomalySampleSize": "8",
+              "units": "%",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "colorMap": {
+                  "colors": [
+                    "#67ca16",
+                    "#ffa600",
+                    "#ff5233"
+                  ],
+                  "values": [
+                    70,
+                    90
+                  ]
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 10,
+                  "h": 5,
+                  "w": 12
+                }
+              },
+              "sources": [
+                {
+                  "name": "usage",
+                  "query": "sum(ts(\"harbor.project.quota.usage.byte.gauge\"))/sum(ts(harbor.project.quota.byte.gauge))*100",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        }
+      ],
+      "id": "2Al4P",
+      "name": "Harbor"
+    },
+    {
+      "rows": [
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "windowing": "full",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "y1Units": "",
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "type": "top-k",
+                "y1UnitAutoscaling": false,
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": true,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Expiration",
+              "anomalySampleSize": "8",
+              "units": "s",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "decimalPrecision": 1,
+                "topK": {
+                  "labelBy": [
+                    "name"
+                  ],
+                  "valueHeader": "Expires In"
+                },
+                "lineFill": 1,
+                "colorMap": {
+                  "colors": [
+                    "#ff816b",
+                    "#ffa600",
+                    "#67ca16"
+                  ],
+                  "values": [
+                    604800,
+                    2592000
+                  ]
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 0,
+                  "h": 5,
+                  "w": 6
+                }
+              },
+              "sources": [
+                {
+                  "name": "B",
+                  "query": "ts(certmanager.certificate.expiration.timestamp.seconds.gauge, cluster=\"${cluster_name}\").gt(0)-time()",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Cert Errors"
+                },
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 0,
+                  "h": 5,
+                  "w": 6
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "certs not ready",
+                  "query": "default(0,count(ts(\"certmanager.certificate.ready.status.gauge\", cluster=\"${cluster_name}\" and condition!=\"True\").eq(1)))\n",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        },
+        {
+          "charts": [
+            {
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "showValueColumn": false,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [
+                  "name",
+                  "namespace",
+                  "condition",
+                  "cluster"
+                ],
+                "showRawValues": false,
+                "lineType": "linear",
+                "showHosts": false,
+                "groupBySource": false,
+                "windowing": "full",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "y1Units": "",
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "type": "table",
+                "y1UnitAutoscaling": false,
+                "showLabels": false,
+                "tagMode": "custom",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "autoColumnTags": false,
+                "numTags": 5,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "includeObsoleteMetrics": false,
+              "name": "Certificate Health",
+              "units": "Units",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "decimalPrecision": 0,
+                "lineFill": 1,
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 5,
+                  "h": 5,
+                  "w": 12
+                }
+              },
+              "sources": [
+                {
+                  "name": "A",
+                  "query": "",
+                  "disabled": false,
+                  "querybuilderSerialization": "{\"metric\":\"ts()\",\"metricType\":\"m\",\"filters\":[[],\"and\"],\"functions\":[],\"_v\":1}",
+                  "querybuilderEnabled": true,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                },
+                {
+                  "name": "A",
+                  "query": "ts(\"certmanager.certificate.ready.status.gauge\", cluster=\"${cluster_name}\").eq(1)",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false
+            }
+          ],
+          "heightFactor": 100
+        }
+      ],
+      "id": "untitled-dashboard-section-1",
+      "name": "Cert-manager"
+    },
+    {
+      "rows": [
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "fixedLegendFilterSort": "TOP",
+                "y1Units": "",
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "line",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": true,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "autoColumnTags": false,
+                "numTags": 4,
+                "defaultSortColumn": null,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Time Since Last Successful Sync",
+              "anomalySampleSize": "8",
+              "units": "s",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Timestamp of last successful sync"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 0,
+                  "h": 5,
+                  "w": 6
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "A",
+                  "query": "time()-ts(external.dns.controller.last.sync.timestamp.seconds.gauge, cluster=\"${cluster_name}\")",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "windowing": "full",
+                "fixedLegendFilterSort": "TOP",
+                "y1Units": "",
+                "fixedLegendShowMetricName": false,
+                "type": "line",
+                "y1UnitAutoscaling": false,
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "autoColumnTags": false,
+                "numTags": 4,
+                "defaultSortColumn": null,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "includeObsoleteMetrics": false,
+              "name": "Total Endpoints Source vs Registry",
+              "units": "Units",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 0,
+                  "h": 5,
+                  "w": 6
+                }
+              },
+              "sources": [
+                {
+                  "name": "A",
+                  "query": "ts(external.dns.*.endpoints.total.gauge, cluster=\"${cluster_name}\")",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false
+            }
+          ],
+          "heightFactor": 100
+        },
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "showValueColumn": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "showRawValues": false,
+                "lineType": "linear",
+                "showHosts": true,
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "groupBySource": false,
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "showLabels": true,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "units": "",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 5,
+                  "h": 5,
+                  "w": 6
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "registry errors",
+                  "query": "ts(\"external.dns.registry.errors.total.counter\", cluster=\"${cluster_name}\")\n",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        }
+      ],
+      "id": "dyd8n",
+      "name": "External-dns"
+    },
+    {
+      "rows": [
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(255,82,51,1)",
+                  "rgba(103,202,22,1)",
+                  "rgba(103,202,22,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "sparkline",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "New Chart",
+              "anomalySampleSize": "8",
+              "units": "",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Ready Pods"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "registry errors",
+                  "query": "align(1m, last, ts(\"kubernetes.daemonset.ready\", daemonset=\"*fluent-bit*\" and cluster=\"${cluster_name}\"))\n",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "showValueColumn": true,
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "showRawValues": false,
+                "lineType": "linear",
+                "showHosts": true,
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "groupBySource": false,
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "gauge",
+                "y1UnitAutoscaling": false,
+                "showLabels": true,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Pods Ready %",
+              "anomalySampleSize": "8",
+              "units": "%",
+              "summarization": "LAST",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "colorMap": {
+                  "colors": [
+                    "#ff816b",
+                    "#67ca16",
+                    "#67ca16"
+                  ],
+                  "values": [
+                    1,
+                    2
+                  ]
+                },
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Pods NOT Ready"
+                },
+                "dashboardLayout": {
+                  "x": 3,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "Pods not Ready",
+                  "query": "align(1m, last,  ts(\"kubernetes.daemonset.ready\", daemonset=\"*fluent-bit*\" and cluster=\"${cluster_name}\")/ts(\"kubernetes.daemonset.desired_scheduled\", daemonset=\"*fluent-bit*\" and cluster=\"${cluster_name}\")*100)\n",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Output Retry/Failed Rates",
+              "anomalySampleSize": "8",
+              "units": "rps",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "total-retries",
+                  "query": "rate(ts(fluentbit.output.retries.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                },
+                {
+                  "name": "failed-retries",
+                  "query": "rate(ts(fluentbit.output.retries.failed.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Output Error Rate",
+              "anomalySampleSize": "8",
+              "units": "errors/second",
+              "summarization": "SUM",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 9,
+                  "y": 0,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "errors per second",
+                  "query": "rate(ts(fluentbit.output.errors.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        },
+        {
+          "charts": [
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Input Bytes Processing Rate",
+              "anomalySampleSize": "8",
+              "units": "rps",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 0,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "bps",
+                  "query": "rate(ts(fluentbit.input.bytes.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": true,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Output Bytes Processing Rate",
+              "anomalySampleSize": "8",
+              "units": "bps",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 3,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "rps",
+                  "query": "rate(ts(fluentbit.output.proc.bytes.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "sourceDescription": "",
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Input Records Processing Rate",
+              "anomalySampleSize": "8",
+              "units": "rps",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 6,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "rps",
+                  "query": "rate(ts(fluentbit.input.records.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            },
+            {
+              "anomalySeverity": "medium",
+              "anomalyDetectionOn": false,
+              "chartSettings": {
+                "y1ScaleSIBy1024": false,
+                "fixedLegendEnabled": false,
+                "fixedLegendFilterField": "CURRENT",
+                "y0ScaleSIBy1024": false,
+                "sparklineDisplayFontSize": "100",
+                "stackType": "zero",
+                "fixedLegendFilterLimit": 5,
+                "fixedLegendShowSourceName": true,
+                "sparklineValueColorMapColors": [
+                  "rgba(103,202,22,1)",
+                  "rgba(255,82,51,1)",
+                  "rgba(255,82,51,1)"
+                ],
+                "fixedLegendPosition": "RIGHT",
+                "customTags": [],
+                "lineType": "linear",
+                "sparklineValueColorMapApplyTo": "TEXT",
+                "windowing": "full",
+                "sparklineSize": "BACKGROUND",
+                "defaultSortColumn": "tags[\"name\"]",
+                "fixedLegendFilterSort": "TOP",
+                "sparklineValueColorMapValuesV2": [
+                  1,
+                  100
+                ],
+                "y1Units": "",
+                "sparklineValueTextMapThresholds": [],
+                "sortValuesDescending": false,
+                "fixedLegendShowMetricName": false,
+                "sparklineDisplayValueType": "VALUE",
+                "type": "stacked-area",
+                "y1UnitAutoscaling": false,
+                "sparklineValueTextMapText": [
+                  "new highest"
+                ],
+                "tagMode": "all",
+                "fixedLegendUseRawStats": false,
+                "y0UnitAutoscaling": false,
+                "fixedLegendDisplayStats": [
+                  "CURRENT"
+                ],
+                "sparklineDisplayHorizontalPosition": "MIDDLE",
+                "sparklineDecimalPrecision": 0,
+                "autoColumnTags": false,
+                "numTags": 4,
+                "sparklineDisplayColor": null,
+                "sparklineLineColor": null,
+                "sparklineFillColor": null
+              },
+              "displayConfidenceBounds": false,
+              "includeObsoleteMetrics": false,
+              "filterOutNonAnomalies": false,
+              "name": "Output Records Processing Rate",
+              "anomalySampleSize": "8",
+              "units": "rps",
+              "summarization": "MEAN",
+              "base": 0,
+              "chartAttributes": {
+                "lineFill": 1,
+                "singleStat": {
+                  "sparklineDisplayLabel": "A",
+                  "sparklineDisplaySubLabel": "Registry Errors"
+                },
+                "dashboardLayout": {
+                  "x": 9,
+                  "y": 5,
+                  "h": 5,
+                  "w": 3
+                },
+                "y0ScaleDecimal": false
+              },
+              "sources": [
+                {
+                  "name": "rps",
+                  "query": "rate(ts(fluentbit.output.proc.records.total.counter, cluster=\"${cluster_name}\"))",
+                  "disabled": false,
+                  "querybuilderEnabled": false,
+                  "secondaryAxis": false,
+                  "queryType": "WQL"
+                }
+              ],
+              "noDefaultEvents": false,
+              "anomalyType": "both"
+            }
+          ],
+          "heightFactor": 100
+        }
+      ],
+      "id": "dooxD",
+      "name": "Fluent-bit"
+    }
+  ],
+  "parameterDetails": {
+    "cluster_name": {
+      "tagsBlackListRegex": "",
+      "parameterType": "DYNAMIC",
+      "tagKey": "cluster",
+      "queryValue": "collect(max(ts(\"kubernetes.cluster.cpu.limit\"), cluster), taggify(1, cluster, \"*\"))",
+      "order": 1,
+      "defaultValue": "Label_2",
+      "hideFromView": false,
+      "value": "dpfeffer-bearisland-vsphere.attached.attached.tmc",
+      "label": "cluster",
+      "dynamicFieldType": "TAG_KEY",
+      "valuesToReadableStrings": {
+        "Label": "*",
+        "Label_2": "dpfeffer-bearisland-vsphere.attached.attached.tmc"
+      },
+      "allowAll": false,
+      "selectedLabel": "Label_2"
+    }
+  }
+}

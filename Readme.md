@@ -4,6 +4,8 @@ The Tanzu profolio consists of a number of components that can be deployed on Ku
 
 ![full dashboard](full-dashboard.png)
 
+Please checkout companion blog post, [Monitoring Tanzu Standard Repository Enterprise Sevices](https://dodd-pfeffer.medium.com/monitoring-tanzu-standard-repository-enterprise-services-b02bc3ec6716).
+
 ## Scope and Status
 
 Select the specific Tanzu Standard Repository package for guidance on configuration
